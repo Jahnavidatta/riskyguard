@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#060a12] text-slate-100 font-sans min-h-screen antialiased selection:bg-cyan-500/30 selection:text-cyan-200;
+  }
+}
+
+/* Glassmorphism & Cyber Command utilities */
+.glass-panel {
+  background: rgba(13, 22, 41, 0.75);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(56, 189, 248, 0.12);
+}
+
+.glass-panel-glow {
+  background: rgba(13, 22, 41, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 242, 254, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 242, 254, 0.08);
+}
+
+.cyber-gradient-text {
+  background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cyber-grid-bg {
+  background-size: 32px 32px;
+  background-image:
+    linear-gradient(to right, rgba(56, 189, 248, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090f1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e3a6e;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
