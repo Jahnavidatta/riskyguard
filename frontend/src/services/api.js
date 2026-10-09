@@ -1,4 +1,4 @@
-const API_BASE = '/api';
+const API_BASE = 'https://riskyguard-backend.onrender.com/api';
 
 function getAuthHeaders() {
   const token = localStorage.getItem('riskradar_token');
